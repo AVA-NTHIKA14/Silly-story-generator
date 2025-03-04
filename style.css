@@ -1,0 +1,93 @@
+/* Apply a fun gradient background */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(135deg, black,#a4171b, #090706);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Centered container */
+  .container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  
+  h1 {
+    font-size: 24px;
+    color: #ff4b5c;
+  }
+  
+  /* Input field */
+  .input-group {
+    margin: 15px 0;
+  }
+  
+  input[type="text"] {
+    width: 80%;
+    padding: 8px;
+    border: 2px solid #ff4b5c;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  /* Radio buttons */
+  .radio-group {
+    margin: 10px 0;
+  }
+  
+  .radio-group label {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 5px;
+  }
+  
+  /* Button Styles */
+  .button-group {
+    margin-top: 15px;
+  }
+  
+  button {
+    background: #ff4b5c;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin: 5px;
+  }
+  
+  button:hover {
+    background: #d63348;
+    transform: scale(1.05);
+  }
+  
+  /* Story box styling */
+  .story {
+    background: #333;
+    color: #ffdd57;
+    padding: 15px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    font-size: 18px;
+  }
+  
+  .story.show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
